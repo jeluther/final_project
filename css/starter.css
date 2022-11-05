@@ -1,0 +1,113 @@
+/* The navigation must clearly display the current page within the nav element. */
+
+/* Each page should contain a main section that can be reached using a Jump to Content option with the first tab on the page.
+Main must be after the navigation. */
+
+/* One page with the images must have a component that uses grid */
+
+/* The grid layout must change in each of your three screen sizes using min-width media queries. */
+
+/* One page with the images must have a component that uses flexbox */
+
+/* The flex layout must change in each of your three screen sizes using min-width media queries. */
+
+/* Media queries for two additional layouts - tablet, and larger screen. 
+the flow of elements must change, elements must hide, and grid/flex properties should be altered.*/
+
+/* If you are using animation, you must include a prefers-reduced-motion media-query that turns it off. */
+
+@keyframes logo {
+    from {
+
+        width: 25px;
+        opacity: 0;
+
+    }
+
+    to {
+
+        width: 275px;
+        opacity: 1;
+
+    }
+}
+
+#logo{
+
+   
+    animation-name: logo;
+    animation-duration: 5s;
+    width: 275px;
+
+}
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.nav_links{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.gallery{
+/* Need to change this to grid at some point */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.gallery img{
+
+    width: 400px; 
+    height: 300px;
+
+}
+
+.gallery .vertical{
+
+    width: 300px; 
+    height: 400px;
+
+}
+
+.gallery .square{
+
+    width: 350px; 
+    height: 350px;
+
+}
+
+@media screen and (min-width: 900px) {
+
+    /* Step 11: Edit the css for the header tag (all instances) and the nav_links class to match our example using flex-properties.
+    The logo should be as far to the left as possible and the links as far to the right as possible.
+    Use flex properties, NOT position properties. */
+    header{
+    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
+    .nav_links{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    
+    }
+
+}
