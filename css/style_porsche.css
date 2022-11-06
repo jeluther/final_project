@@ -16,3 +16,34 @@ the flow of elements must change, elements must hide, and grid/flex properties s
 
 /* If you are using animation, you must include a prefers-reduced-motion media-query that turns it off. */
 
+
+.gallery{
+    /* Need to change this to grid at some point */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%
+    
+    }
+    
+    .gallery img{
+    
+        width: 100%; 
+        height: 100%;
+    
+    }
+    
+    .gallery .vertical{
+    
+        width: 100%; 
+        height: 100%;
+    
+    }
+    
+    .gallery .square{
+    
+        width: 100%; 
+        height: 100%;
+    
+    }

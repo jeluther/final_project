@@ -15,3 +15,57 @@ Main must be after the navigation. */
 the flow of elements must change, elements must hide, and grid/flex properties should be altered.*/
 
 /* If you are using animation, you must include a prefers-reduced-motion media-query that turns it off. */
+
+h1{
+
+justify-content: center;
+align-items: center;
+
+}
+
+.content{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 80%;
+grid-row-gap: 10px;
+
+}
+
+.content h3{
+
+grid-column: 0/span end;
+justify-content: center;
+align-items: center;
+
+}
+
+.content img{
+
+    width: 100%;
+
+}
+
+.content img:nth-child(even){
+
+grid-column: 0;
+
+}
+
+.content img:nth-child(odd){
+
+    grid-column: 1;
+    
+}
+
+.content p:nth-child(odd){
+
+    grid-column: 0;
+
+}
+
+.content p:nth-child(even){
+
+    grid-column: 1;
+
+}
