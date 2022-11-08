@@ -19,7 +19,7 @@ the flow of elements must change, elements must hide, and grid/flex properties s
 body{
     margin: 0;
     padding: 0;
-    font-size: 16pt; /* test for this! Make all sizes em or rem */
+    font-size: 16pt;
   }
   
   header{
@@ -42,7 +42,9 @@ body{
   
   p {
     padding: 0 30px;
-  }
+  } 
+  
+
   
   a.skip{
     background: white;
