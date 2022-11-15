@@ -15,7 +15,7 @@ Main must be after the navigation. */
 the flow of elements must change, elements must hide, and grid/flex properties should be altered.*/
 
 /* If you are using animation, you must include a prefers-reduced-motion media-query that turns it off. */
-li #porsche{
+nav #porsche{
 
     border: 2px solid black
 

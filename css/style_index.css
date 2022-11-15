@@ -16,7 +16,7 @@ the flow of elements must change, elements must hide, and grid/flex properties s
 
 /* If you are using animation, you must include a prefers-reduced-motion media-query that turns it off. */
 
-li #index{
+nav #index{
 
     border: 2px solid black
 
