@@ -23,8 +23,8 @@ body{
   }
   
   header{
-    background: #fff;
-    border-bottom: 3px solid #50C7C7;
+    background: lightgray;
+    border-bottom: 3px solid lightblue;
     margin-bottom:20px
   }
   
@@ -73,10 +73,16 @@ body{
   }
   
   .nav_item a:hover, a:focus{
-    color: #50C7C7;
+    color: darkblue;
     text-decoration: underline;
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
+  }
+
+  a:link, a:visited{
+
+    color: black;
+
   }
   
   footer{
