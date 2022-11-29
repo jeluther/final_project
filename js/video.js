@@ -58,9 +58,9 @@ document.querySelector("#faster").addEventListener("click", function() {
 // Skip Ahead		-	Advance the current video by 10 seconds.  
 //						If the video length has been exceeded go back to the start of the video - no farther.
 //						Log the current location of the video.
-document.querySelector("#skip").addEventListener("click", function() {
+document.querySelector("#skip_forward").addEventListener("click", function() {
 
-	if(video.currentTime + 10 > video.duration){
+	if(video.currentTime + 2 > video.duration){
 
 		video.currentTime = 0;
 
@@ -68,9 +68,37 @@ document.querySelector("#skip").addEventListener("click", function() {
 	
 	else{
 
-		video.currentTime = video.currentTime + 10;
+		video.currentTime = video.currentTime + 2;
 
 	}
+
+	console.log("The current location of the video: " + video.currentTime);
+	
+});
+
+// Skip Back
+document.querySelector("#skip_backward").addEventListener("click", function() {
+
+	if(video.currentTime - 2 < 0){
+
+		video.currentTime = 0;
+
+	}
+	
+	else{
+
+		video.currentTime = video.currentTime - 2;
+
+	}
+
+	console.log("The current location of the video: " + video.currentTime);
+
+});
+
+// Restart
+	document.querySelector("#restart").addEventListener("click", function() {
+
+		video.currentTime = 0;
 
 	console.log("The current location of the video: " + video.currentTime);
 	
