@@ -20,12 +20,19 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16pt;
+    background-color: gray;
   }
   
   header{
-    background: lightgray;
-    border-bottom: 3px solid lightblue;
-    margin-bottom:20px
+    background: gray;
+    color: white;
+    border-bottom: 3px solid gold;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
   h1{
@@ -47,7 +54,7 @@ body{
 
   
   a.skip{
-    background: white;
+    background: black;
     left: 0;
     padding: 6px;
     position: absolute;
@@ -73,7 +80,7 @@ body{
   }
   
   .nav_item a:hover, a:focus{
-    color: darkblue;
+    color: goldenrod;
     text-decoration: underline;
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
@@ -81,12 +88,12 @@ body{
 
   a:link, a:visited{
 
-    color: black;
+    color: white;
 
   }
   
   footer{
-    background-color: black;
+    background-color: dimgray;
     color: white;
     padding: 30px;
     text-align: center;
@@ -118,26 +125,30 @@ body{
 
 }
 
-header{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
 .nav_links{
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: center;
+    gap: 5px;
 
 }
 
+@media screen and (min-width: 768px) {
 
+  .nav_links{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
 
-@media screen and (min-width: 900px) {
+}
+
+}
+
+@media screen and (min-width: 1280px) {
 
     /* Step 11: Edit the css for the header tag (all instances) and the nav_links class to match our example using flex-properties.
     The logo should be as far to the left as possible and the links as far to the right as possible.
@@ -148,14 +159,6 @@ header{
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-    
-    }
-    
-    .nav_links{
-    
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
     
     }
 

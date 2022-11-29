@@ -22,6 +22,24 @@ nav #index{
 
 }
 
+body{
+
+    background-color: black;
+
+}
+
+#main > h1{
+
+    display: none;
+
+}
+
+#main > p{
+
+    display: none;
+
+}
+
 h1{
 
     font-size: 60px;
@@ -31,11 +49,6 @@ h1{
 
 }
 
-.about > h2{
-
-    display: none;
-
-}
 
 .history{
 
@@ -43,30 +56,42 @@ h1{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
-}
-
-.history h1{
-
-    text-align: center;
+    background-color: black;
 
 }
 
 .history h2{
 
+    color: red;
+
+}
+
+h1{
+
     text-align: center;
+    color: gold;
+    margin: auto;
+
+}
+
+h2{
+
+    text-align: center;
+    color: white;
 
 }
 
 .history h3{
 
     text-align: center;
+    color: white;
 
 }
 
-.history p{
+p{
 
     text-align: left;
+    color: lightgray;
 
 }
 
@@ -77,7 +102,7 @@ h1{
     margin: auto;
     grid-template-columns: 100%;
     justify-items: center;
-    background-color: lightblue;
+    background-color: black;
     gap: 10px 10%;
 
 }
@@ -92,8 +117,27 @@ h1{
 
 .video_package{
 
+    display: block;
     justify-items: center;
     width: 100%
+
+}
+
+.video_package #volume{
+
+    color: white;
+
+}
+
+.video_package label{
+
+    color: white;
+
+}
+
+.reduced{
+
+    display: none;
 
 }
 
@@ -109,9 +153,24 @@ h1{
 
     /* WHy does this go back to left when I play the video */
     justify-items: center;
+    margin: auto;
 }
 
+/* Change volume slider color */
+
 @media screen and (min-width: 700px) {
+
+    #main > h1{
+
+        display: block;
+    
+    }
+
+    #main > p{
+
+        display: block;
+    
+    }
 
     .history{
 
@@ -120,7 +179,7 @@ h1{
         margin: auto;
         grid-template-columns: 20% 80%;
         align-items: left;
-        background-color: lightgray;
+        background-color: black;
     
     }
     
@@ -138,6 +197,7 @@ h1{
         justify-content: center;
         justify-items: center;
         align-items: center;
+        margin: auto;
     
     }
     
@@ -172,7 +232,7 @@ h1{
         grid-template-columns: 45% 45%;
         justify-content: space-evenly;
         align-items: center;
-        background-color: lightblue;
+        background-color: black;
 
     }
 
@@ -215,8 +275,9 @@ h1{
         margin: auto;
         grid-template-columns: 20% 10% 35% 35%;
         align-items: left;
-        background-color: lightgray;
-        gap: 10px 1%;
+        background-color: white;
+        
+        row-gap: 10px;
 
     }
 
@@ -230,18 +291,31 @@ h1{
     .history h2{
 
         grid-column: 1;
+        margin: auto;
 
     }
 
     .history h3{
 
+        color: black;
         grid-column: 3/5;
+        margin: auto;
 
     }
 
     .history p{
 
+        color: black;
         grid-column: 3/5;
+        margin: auto;
+
+    }
+
+    .history img{
+
+        grid-column: 3/5;
+        margin: auto;
+        width: 100%;
 
     }
 
@@ -252,7 +326,32 @@ h1{
         display: grid;
         margin: auto;
         grid-template-columns: 55% 5% 40%;
-        background-color: lightgray;     
+        background-color: black;  
+   
 
     }
+
+    .content > div{
+
+        justify-content: start;
+        align-items: flex-start;
+        justify-items: flex-start;
+
+    }
+}
+
+@media(prefers-reduced-motion: reduce){
+
+.video_package{
+
+    display: none;
+
+}
+
+.reduced{
+
+    display: block;
+
+}
+
 }
