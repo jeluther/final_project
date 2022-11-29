@@ -27,15 +27,7 @@ h1, h2, h3{
 
 }
 
-.welcome{
-
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: space-between;
-
-}
-
-.welcome h1{
+h1{
 
     text-align: center;
 
@@ -43,32 +35,42 @@ h1, h2, h3{
 
 .welcome img{
 
-    width: 100%;
+    display: none;
 
 }
 
 /* Make it 3 accross for the phone display */
 .gallery{
     /* Need to change this to grid at some point */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    gap: 10px 10%;
     
 }
-    
+
+.gallery h1{
+
+    grid-column: 1/3;
+    text-align: center;
+
+}
+
 .gallery img{
 
-    width: 30%; 
-    height: 30%;
+    width: 95%; 
+    height: 95%;
+    align-content: center;
 
 }
 
 .gallery h3{
 
-    width: 100%; 
-    height: 100%;
+    display: none;
 
 }
 
@@ -85,18 +87,210 @@ h1, h2, h3{
 
 }
 
+.content > h1{
+
+    display: block;
+    text-align: center;
+
+}
+
+.content h2{
+
+    font-size: 20px;
+
+}
+
+.models{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.models h3{
+
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.models ul{
+
+    display: none;
+
+}
+
+.models img{
+
+    width: 100%;
+
+}
+
+.movies{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.movies h3{
+
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.movies p{
+
+    display: none;
+
+}
+
+.movies img{
+
+    width: 100%;
+
+}
+
 @media screen and (min-width: 700px) {
 
+    h1{
+
+        display: none;
+
+    }
+
+    .welcome img{
+
+        display: block;
+        width: 100%;
+    
+    }
+
+    .gallery{
+        /* Need to change this to grid at some point */
+        width: 95%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        gap: 5px 5%;
+        
+    }
+
+    .models{
+
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+
+    .models h1{
+
+        grid-column: 1/4;
+    
+    }
+    
+    .models h3{
+    
+        font-size: 40px;
+        text-align: center;
+        
+    
+    }
+    
+    .models ul{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    
+    }
+    
+    .models img{
+    
+        width: 100%;
+    
+    }
+    
+    .movies{
+    
+        width: 100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        gap: 5px 5%;
+    
+    }
+    
+    .movies h3{
+    
+        font-size: 40px;
+        text-align: center;
+    
+    }
+
+    .movies h4{
+    
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    
+    .movies p{
+    
+        display: inline;
+    
+    }
+    
+    .movies img{
+    
+        width: 100%;
+    
+    }
 
     
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
 
     h1, h2, h3{
 
         text-align: left;
 
+    }
+
+    .welcome{
+
+        display: grid;
+        width: 90%;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .welcome p{
+    
+        display: block;
+        grid-column: 2;
+    
+    }
+    
+    .welcome img{
+    
+        display: block;
+        width: 100%;
+        grid-column: 1;
+    
     }
 
     .gallery{
@@ -118,8 +312,10 @@ h1, h2, h3{
 
     .gallery h3{
 
+        display: block;
         width: 100%; 
         height: 100%;
+        text-align: center;
 
     }
 
@@ -143,12 +339,111 @@ h1, h2, h3{
 
     }
 
+    .content > h1{
+
+        display: none;
+
+    }
+
     .content h2{
 
+        font-size: 35px;
         vertical-align: top;
         grid-row: 1/ auto;
         grid-column: 2/3;
 
+    }
+
+    .models{
+
+        width: 100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        gap: 5px 5%;
+    
+    }
+
+    .models h1{
+
+        display: block;
+        grid-column: 1/3;
+        text-align: center;
+    
+    }
+    
+    .models h3{
+    
+        font-size: 40px;
+        text-align: center;
+        
+    
+    }
+    
+    .models ul{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+    
+    .models img{
+    
+        width: 100%;
+    
+    }
+    
+    .movies{
+    
+        width: 100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 22% 22% 22% 22%;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        gap: 5px 5%;
+    
+    }
+
+    .movies h1{
+    
+        display: block;
+        font-size: 40px;
+        text-align: center;
+        grid-column: 1/5;
+    
+    }
+    
+    .movies h3{
+    
+        font-size: 30 px;
+        text-align: center;
+    
+    }
+
+    .movies h4{
+    
+        font-size: 15px;
+        text-align: center;
+    
+    }
+    
+    .movies p{
+    
+        display: inline;
+    
+    }
+    
+    .movies img{
+    
+        width: 100%;
+    
     }
 
 }
