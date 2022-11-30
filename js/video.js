@@ -19,21 +19,23 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 
 	console.log("Play Video");
-	video.play();
-	video.volume = document.querySelector("#slider").value / 100;
-	document.querySelector("#volume").innerHTML= (document.querySelector("#slider").value + "%");
+
+	if (video.paused == true){
+		video.play();
+		video.volume = document.querySelector("#slider").value / 100;
+		document.querySelector("#volume").innerHTML= (document.querySelector("#slider").value + "%");
+		document.querySelector("#play").innerHTML="pause";
+	}
+
+	else{
+
+		console.log("Video paused");
+		video.pause();
+		document.querySelector("#play").innerHTML="play";
+
+	}
 
 });
-
-
-// Pause Button		-	Pause the video.
-document.querySelector("#pause").addEventListener("click", function() {
-
-	console.log("Video paused");
-	video.pause();
-	
-});
-
 
 // Slow Down		-	Slow the current video speed by 10% each time the button is clicked and log the new speed to the console.  
 document.querySelector("#slower").addEventListener("click", function() {
