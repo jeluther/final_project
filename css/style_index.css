@@ -37,12 +37,6 @@ body{
 
 }
 
-#main > h1{
-
-    display: none;
-
-}
-
 #main > p{
 
     display: none;
@@ -71,7 +65,9 @@ h1{
 
 .history h1{
     color: black;
+    display: block;
 }
+
 .history h2{
 
     color: red;
