@@ -464,7 +464,7 @@ h1, h2, h3{
     .history h1{
 
         display: block;
-        color: darkred;
+        color: red;
         text-align: center;
         margin: auto;
 
