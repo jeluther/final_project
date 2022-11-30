@@ -18,9 +18,18 @@ the flow of elements must change, elements must hide, and grid/flex properties s
 
 nav #index{
 
-    border: 2px solid black
+    border: 5px solid black
 
 }
+
+h3{
+    color: white;
+}
+
+
+    header {
+        background-color:  #800080;
+      }
 
 body{
 
