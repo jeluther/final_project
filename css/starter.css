@@ -17,132 +17,132 @@ the flow of elements must change, elements must hide, and grid/flex properties s
 /* If you are using animation, you must include a prefers-reduced-motion media-query that turns it off. */
 
 body{
-    margin: 0;
-    padding: 0;
-    font-size: 16pt;
-    background-color: gray;
-  }
-  
-  header{
-    background: gray;
-    color: white;
-    border-bottom: 3px solid gold;
-    margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  background-color: gray;
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  h1{
-    font-size: 2em;
-    text-align: center;
-    line-height: 2;
-  }
-  
-  h2{
-    font-size: 1.5em;
-    text-align: center;
-    padding: 5px;
-  }
-  
-  p {
-    padding: 0 30px;
-  } 
-  
+header{
+  background: gray;
+  color: white;
+  border-bottom: 3px solid gold;
+  margin-bottom: 20px;
 
-  
-  a.skip{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
-  
-  a.skip:focus{
-    top:20px;
-    color: black;
-    text-decoration-style: solid;
-  }
-  
-  *:focus{
-    border: 2px solid black;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding: 0 30px;
+} 
 
 
-  .nav_item a{
-    padding: 10px;
-  }
-  
-  .nav_item a:hover, a:focus{
-    color: goldenrod;
-    text-decoration: underline;
-    -webkit-text-decoration-style: dotted;
-            text-decoration-style: dotted;
-  }
 
-  a:link, a:visited{
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
 
-    color: white;
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
 
-  }
-  
-  footer{
-    background-color: dimgray;
-    color: white;
-    padding: 30px;
-    text-align: center;
-  }
+*:focus{
+  border: 2px solid black;
+}
+
+
+.nav_item a{
+  padding: 10px;
+}
+
+.nav_item a:hover, a:focus{
+  color: goldenrod;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+a:link, a:visited{
+
+  color: white;
+
+}
+
+footer{
+  background-color: dimgray;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
 
 
 @keyframes logo {
-    from {
+  from {
 
-        width: 25px;
-        opacity: 0;
+      width: 25px;
+      opacity: 0;
 
-    }
+  }
 
-    to {
+  to {
 
-        width: 275px;
-        opacity: 1;
+      width: 275px;
+      opacity: 1;
 
-    }
+  }
 }
 
 #logo{
 
-   
-    animation-name: logo;
-    animation-duration: 5s;
-    width: 275px;
+ 
+  animation-name: logo;
+  animation-duration: 5s;
+  width: 275px;
 
 }
 
 .nav_links{
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 5px;
 
 }
 
 @media screen and (min-width: 768px) {
 
-  .nav_links{
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 12px;
+.nav_links{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
 
 }
 
@@ -150,27 +150,27 @@ body{
 
 @media screen and (min-width: 1280px) {
 
-    /* Step 11: Edit the css for the header tag (all instances) and the nav_links class to match our example using flex-properties.
-    The logo should be as far to the left as possible and the links as far to the right as possible.
-    Use flex properties, NOT position properties. */
-    header{
-    
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-    
-    }
+  /* Step 11: Edit the css for the header tag (all instances) and the nav_links class to match our example using flex-properties.
+  The logo should be as far to the left as possible and the links as far to the right as possible.
+  Use flex properties, NOT position properties. */
+  header{
+  
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+  }
 
 }
 
 @media(prefers-reduced-motion: reduce){
 
-    /* Step 14: The logo class should appear but not be animated if prefers-reduced-motion is selected in the accessibility preferences. */
-    #logo{
-    
-        animation: none;
-    
-    }
-    
+  /* Step 14: The logo class should appear but not be animated if prefers-reduced-motion is selected in the accessibility preferences. */
+  #logo{
+  
+      animation: none;
+  
+  }
+  
 }
