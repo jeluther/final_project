@@ -181,7 +181,7 @@ p{
 
 /* Change volume slider color */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
     #main > h1{
 
@@ -242,7 +242,7 @@ p{
     
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1280px) {
 
 
     .features{
