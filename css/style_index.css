@@ -78,7 +78,7 @@ h1{
 h1{
 
     text-align: center;
-    color: gold;
+    color: black;
     margin: auto;
 
 }
@@ -90,6 +90,14 @@ h2{
 
 }
 
+figure{
+    color: white;
+}
+
+figcaption{
+    color: white;
+    display:none;
+}
 .history h3{
 
     text-align: center;
