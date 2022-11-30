@@ -24,16 +24,9 @@
 
     <main class="about" id="main">
 
-        <!-- <label for = “name_id”>Your Name</label> <input type="text" placeholder="Enter Your Name" name = "name" id = “name_id”>
-        <form>
-            Student Name:<br> <input type="text" name="name">
-            <br>
-            Student Subject:<br> <input type="text" name="subject">
-            <br>
-            Rank:<br> <input type="text" name="rank">
-         </form> -->
+        <button onclick="getpersonalizeddata()">Personalize website</button>
 
-        <h1>Welcome</h1>
+        <h1 id="welcome_h1">Welcome</h1>
         <p> The purpose of this website is to highlight some of the most influential and elegent vehicles to have ever been driven.
             The main page is designated toward detailing very icnonic cars over the years. 
             We also have pages dedicated toward the history of specfic automobile manufacturers and the vehicles that they've produced which have contributed toward their reputation.
@@ -206,7 +199,7 @@
                             height="100%" 
                             id="player1" 
                             preload="none"
-                            src="assets/Huayra_alt.MOV">
+                            src="assets/Huayra_alt.mov">
                             
                             <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">	
                                 Your browser does not support HTML5 video.
@@ -251,6 +244,17 @@
         </div>
 
     </main>
+
+    <script>
+        
+        function getpersonalizeddata(){
+            
+        let nm = prompt("How should we address you?");
+        document.querySelector("#welcome_h1").innerHTML= "Welcome " + nm + "!";
+
+        }
+
+    </script>
 
     <footer>
         <p>University of Michigan School of Information <br/>
