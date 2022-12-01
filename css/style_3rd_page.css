@@ -3,14 +3,10 @@
 
 nav #ford{
 
-    border: 5px solid black
+    border: 3px solid goldenrod;
 
 }
 
-header {
-    background-color:  #800080;
-  }
-  
 h1, h2, h3{
 
     text-align: center;

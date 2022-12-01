@@ -24,9 +24,9 @@ body{
 }
 
 header{
-  background: gray;
+  background-color: black;
   color: white;
-  border-bottom: 3px solid gold;
+  border-bottom: 3px solid goldenrod;
   margin-bottom: 20px;
 
   display: flex;
@@ -93,7 +93,8 @@ a:link, a:visited{
 }
 
 footer{
-  background-color: dimgray;
+  background-color: black;
+  border-top: 3px solid goldenrod;
   color: white;
   padding: 30px;
   text-align: center;
