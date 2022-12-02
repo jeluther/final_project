@@ -5,6 +5,12 @@ nav #toyota{
 
 }
 
+body{
+
+  background-color: black;
+
+}
+
 h1, h2, h3{
 
     text-align: left;
@@ -16,6 +22,8 @@ h1, h2, h3{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
+    background-color: black;
+    color: white;
 
 }
 
@@ -64,15 +72,9 @@ h1, h2, h3{
     grid-template-columns: 90%;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    background-color: black;
     gap: 10px 10%;
 
-}
-
-@media screen and (min-width: 700px) {
-
-
-    
 }
 
 /*
@@ -206,7 +208,6 @@ h1, h2, h3{
   
   body {
     margin: 0;
-    background-color: #FFFFFF;
     font-family: Arial;
   }
   

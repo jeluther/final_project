@@ -10,15 +10,17 @@ nav #ford{
 h1, h2, h3{
 
     text-align: center;
+    color: white;
 
 }
 
 .welcome{
 
+    background-color: black;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
-    
+    color: white;
 
 }
 
@@ -44,6 +46,7 @@ form {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    color: white;
 }
 
 ul {
