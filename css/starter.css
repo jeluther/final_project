@@ -53,8 +53,6 @@ p {
   padding: 0 30px;
 } 
 
-
-
 a.skip{
   background: white;
   left: 0;
@@ -75,7 +73,6 @@ a.skip:focus{
 *:focus{
   border: 2px solid black;
 }
-
 
 .nav_item a{
   padding: 10px;

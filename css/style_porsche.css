@@ -21,6 +21,8 @@ nav #porsche{
 
 }
 
+/* Needs to be reviewed */
+
 footer p{
 
     text-align: left;
@@ -30,13 +32,6 @@ footer p{
 h3{
     color: white;
 }
-
-body{
-
-    background-color: black;
-
-}
-
 
 .welcome p{
 
@@ -50,21 +45,10 @@ h1, h2, h3{
 
 }
 
-.welcome h1{
-
-    display: none;
-    text-align: center;
-    color: darkred;
-
-}
-
 .welcome img{
 
     display: block;
     width: 90%;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     margin: auto;
 
 }
@@ -72,14 +56,23 @@ h1, h2, h3{
 .welcome p{
 
     display: none;
+    color: white;
 
 }
 
 .history h1{
 
-    grid-column: 1/3;
-    text-align: center;
+    display: block;
     color: red;
+    text-align: center;
+    margin: auto;
+
+}
+
+.history p{
+
+    text-align: left;
+    color: white;
 
 
 }
@@ -90,8 +83,6 @@ h1, h2, h3{
     margin: auto;
     grid-template-columns: 50% 50%;
     justify-content: center;
-    align-items: center;
-    background-color: black;
     gap: 10px 10%;
     
 }
@@ -99,7 +90,7 @@ h1, h2, h3{
 .gallery h1{
 
     display: none;
-    color: white;
+    color: red;
 
 }
 
@@ -138,24 +129,7 @@ h1, h2, h3{
     margin: auto;
     grid-template-columns: 90%;
     justify-content: center;
-    align-items: center;
-    background-color: black;
     gap: 10px 10%;
-
-}
-
-.content > h1{
-
-    display: block;
-    text-align: center;
-    color: red;
-
-}
-
-.content h2{
-
-    font-size: 20px;
-    color: gray;
 
 }
 
@@ -164,7 +138,6 @@ h1, h2, h3{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: black;
     width: 90%;
     margin: auto;
     justify-content: center;
@@ -176,7 +149,6 @@ h1, h2, h3{
 .models h1{
 
     display: block;
-    font-size: 40px;
     text-align: center;
     color: red;
     width: 100%;
@@ -185,9 +157,8 @@ h1, h2, h3{
 
 .models h3{
 
-    font-size: 40px;
     text-align: center;
-    color:goldenrod;
+    color: goldenrod;
 
 }
 
@@ -202,9 +173,6 @@ h1, h2, h3{
 
     width: 100%;
     margin: auto;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
 
 }
 
@@ -213,7 +181,6 @@ h1, h2, h3{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: black;
     width: 90%;
     margin: auto;
 
@@ -222,15 +189,14 @@ h1, h2, h3{
 .movies h1{
 
     display: block;
-    font-size: 40px;
     text-align: center;
     color: red;
+    width: 100%;
 
 }
 
 .movies h3{
 
-    font-size: 40px;
     text-align: center;
     color:goldenrod;
 
@@ -239,16 +205,15 @@ h1, h2, h3{
 .movies h4{
 
     display: block;
-    font-size: 40px;
     text-align: center;
-    color:white;
+    color: white;
 
 }
 
 .movies p{
 
     display: inline;
-    color:gray;
+    color: gray;
 
 }
 
@@ -304,19 +269,11 @@ h1, h2, h3{
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: silver;}
 
-
-
 @media screen and (min-width: 768px) {
 
     .gallery{
-        /* Need to change this to grid at some point */
-        width: 90%;
-        display: grid;
-        margin: auto;
+
         grid-template-columns: 33% 33% 33%;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
         gap: 5px 5%;
         
     }
@@ -326,7 +283,7 @@ h1, h2, h3{
         display: block;
         grid-column: 1/4;
         text-align: center;
-        color: red;
+        width: 100%;
 
     }
 
@@ -359,13 +316,13 @@ h1, h2, h3{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        text-align: left;
     
     }
       
 
     .movies{
 
-        display: flex;
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -373,13 +330,6 @@ h1, h2, h3{
         column-gap: 10px;
         justify-content: space-evenly;
         
-
-    }
-
-    .movies h1{
-
-        text-align: center;
-        width: 100%;
 
     }
 
@@ -394,18 +344,11 @@ h1, h2, h3{
 
 @media screen and (min-width: 1280px) {
 
-    h1, h2, h3{
-
-        text-align: left;
-
-    }
-
     .welcome{
 
         display: grid;
         width: 95%;
         grid-template-columns: 50% 50%;
-        justify-content: space-between;
         align-items: center;
     
     }
@@ -437,15 +380,7 @@ h1, h2, h3{
         width: 100%
         
     }
-
-    .gallery h1{
-
-        display: block;
-        color: red;
-        width: 100%;
-
-    }
-        
+     
     .gallery img{
 
         display: block;
@@ -499,15 +434,9 @@ h1, h2, h3{
     .content{
 
         width: 100%;
-        display: grid;
-        margin: auto;
         grid-template-columns: 40% 50%;
-        justify-content: space-evenly;
         align-items: center;
-        background-color: black;
         gap: 10px 10%;
-
-        vertical-align: top;
 
     }
 
@@ -518,20 +447,9 @@ h1, h2, h3{
 
     }
 
-    .history h1{
-
-        display: block;
-        color: red;
-        text-align: center;
-        margin: auto;
-
-    }
-
     .models{
 
-        display: flex;
         flex-direction: row;
-        align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;
     
@@ -558,12 +476,6 @@ h1, h2, h3{
     
     }
     
-    .models img{
-    
-        width: 100%;
-    
-    }
-
     .movies{
 
         justify-content: space-around;
@@ -572,7 +484,6 @@ h1, h2, h3{
 
     .movies div{
 
-        display: block;
         width: 375px; 
 
     }
