@@ -5,17 +5,17 @@
 var video;
 
 
-// Page load		-	Initialize the video element and turn off autoplay and turn off looping.
+// Page load
 window.addEventListener("load", function() {
 
 	console.log("Good job opening the window");
 	video = document.querySelector("#player1");
-	video.autoPlay = false;
+	// video.autoPlay = false;
 	video.loop = false;
 
 });
 
-// Play Button		-	Play the video and update the volume information.
+// Play Button
 document.querySelector("#play").addEventListener("click", function() {
 
 	console.log("Play Video");
@@ -24,42 +24,20 @@ document.querySelector("#play").addEventListener("click", function() {
 		video.play();
 		video.volume = document.querySelector("#slider").value / 100;
 		document.querySelector("#volume").innerHTML= (document.querySelector("#slider").value + "%");
-		document.querySelector("#play").innerHTML="pause";
+		document.querySelector("#play").innerHTML="Pause";
 	}
 
 	else{
 
 		console.log("Video paused");
 		video.pause();
-		document.querySelector("#play").innerHTML="play";
+		document.querySelector("#play").innerHTML="Play";
 
 	}
 
 });
 
-// Slow Down		-	Slow the current video speed by 10% each time the button is clicked and log the new speed to the console.  
-document.querySelector("#slower").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-	video.playbackRate = video.playbackRate * .9;
-	console.log("The New video speed is: " + video.playbackRate);
-
-	
-});
-
-// Speed Up			-	Increase the current video speed each time the button is clicked and log the new speed to the console.
-// 						Change it by an amount proportional to the slow down.
-// 						If you slow down three times and then speed up three times you should be within 5 digits of 100% again.
-document.querySelector("#faster").addEventListener("click", function() {
-	video = document.querySelector("#player1");
-	video.playbackRate = video.playbackRate * (1/.9);
-	console.log("The New video speed is: " + video.playbackRate);
-
-	
-});
-
-// Skip Ahead		-	Advance the current video by 10 seconds.  
-//						If the video length has been exceeded go back to the start of the video - no farther.
-//						Log the current location of the video.
+// Skip Ahead
 document.querySelector("#skip_forward").addEventListener("click", function() {
 	video = document.querySelector("#player1");
 	if(video.currentTime + 2 > video.duration){
@@ -98,21 +76,21 @@ document.querySelector("#skip_backward").addEventListener("click", function() {
 });
 
 // Restart
-	document.querySelector("#restart").addEventListener("click", function() {
-		video = document.querySelector("#player1");
-		video.currentTime = 0;
+document.querySelector("#restart").addEventListener("click", function() {
+	video = document.querySelector("#player1");
+	video.currentTime = 0;
 
 	console.log("The current location of the video: " + video.currentTime);
 	
 });
 
-// Mute				-	Mute/unmute the video and update the text in the button.
+// Mute	
 document.querySelector("#mute").addEventListener("click", function() {
 	video = document.querySelector("#player1");
 	if (!video.muted){
 
 		video.muted = true;
-		document.querySelector("#mute").innerHTML="unmute";
+		document.querySelector("#mute").innerHTML="Unmute";
 		console.log("Video is muted");
 
 	}
@@ -120,7 +98,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 	else{
 
 		video.muted = false;
-		document.querySelector("#mute").innerHTML="mute";
+		document.querySelector("#mute").innerHTML="Mute";
 		console.log("Video is unmuted");
 
 	}
