@@ -219,8 +219,23 @@ h1, h2, h3{
 
 .movies p{
 
-    display: inline;
+    display: none;
     color: gray;
+
+}
+
+.movies > p{
+
+    display: block;
+    width: 100%;
+    text-align: center;;
+
+}
+
+.movies > button{
+
+    display: block;
+    text-align: center;
 
 }
 
