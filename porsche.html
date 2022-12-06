@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/starter.css">
     <link rel="stylesheet" type="text/css" href="css/style_porsche.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,19 +61,45 @@
                 
                 <h1> Porsche Photo Gallery </h1>
 
-                <img src="images/918_spyder.jpg" alt="Image of a Porsche 918 Spyder car" />
-                <img src="images/277.jpg" alt="Image of a Porsche racing car with number 277" />
-                <img class="tall" src="images/baby_blue.jpg" alt="Image of a baby blue Porsche 911" />
-                <img src="images/carrera_gt.jpg" alt="Image of renouned 2004 Porsche Carrera GT" />
-                <img src="images/racing.jpg" alt="Image of a porsche race car" />
-                <img class="vertical" src="images/black_porsche.png" alt="Image of a black Porsche 911" />
-                <img class="tall" src="images/mountains.jpg" alt="Image of a Porsche driving in the mountains" />
-                <img src="images/cabriolet.jpg" alt="Image of a Porsche 911 Turbo Cabriolet" />
-                <img src="images/trio.jpg" alt="Multiple Classic Porsche's lined up" />
-                <img src="images/white_porsche.jpg" alt="An image of a white Porsche with snow-topped mountains in the background" />
-                <img src="images/yellow_retro_carrera.jpg" alt="An image of a yellow Classic Porsche Carrera" />
-                <img class="vertical" src="images/curve.jpg" alt="Image of a Porsche racing around a curve" />
-                <img src="images/white_retro_911.jpg" alt="An image of a white Classic Porsche 911" />
+                <a href="images/918_spyder.jpg" target="_blank" data-lightbox="cars" data-title="Image of a Porsche 918 Spyder car">
+                    <img src="images/918_spyder.jpg" alt="Image of a Porsche 918 Spyder car" />
+                </a>
+                <a href="images/277.jpg" target="_blank" data-lightbox="cars" data-title="Image of a Porsche racing car with number 277">
+                    <img src="images/277.jpg" alt="Image of a Porsche racing car with number 277" />
+                </a>
+                <a class="tall" href="images/baby_blue.jpg" target="_blank" data-lightbox="cars" data-title="Image of a baby blue Porsche 911">
+                    <img src="images/baby_blue.jpg" alt="Image of a baby blue Porsche 911" />
+                </a>
+                <a href="images/carrera_gt.jpg" target="_blank" data-lightbox="cars" data-title="Image of renouned 2004 Porsche Carrera GT">
+                    <img src="images/carrera_gt.jpg" alt="Image of renouned 2004 Porsche Carrera GT" />
+                </a>
+                <a href="images/racing.jpg" target="_blank" data-lightbox="cars" data-title="Image of a Porsche race car">
+                    <img src="images/racing.jpg" alt="Image of a Porsche race car" />
+                </a>
+                <a class="vertical" href="images/black_porsche.jpg" target="_blank" data-lightbox="cars" data-title="Image of a black Porsche 911">
+                    <img src="images/black_porsche.png" alt="Image of a black Porsche 911" />
+                </a>
+                <a class="tall" href="images/mountains.jpg" target="_blank" data-lightbox="cars" data-title="Image of a Porsche driving in the mountains">
+                    <img src="images/mountains.jpg" alt="Image of a Porsche driving in the mountains" />
+                </a>
+                <a href="images/cabriolet.jpg" target="_blank" data-lightbox="cars" data-title="Image of a Porsche 911 Turbo Cabriolet">
+                    <img src="images/cabriolet.jpg" alt="Image of a Porsche 911 Turbo Cabriolet" />
+                </a>
+                <a href="images/trio.jpg" target="_blank" data-lightbox="cars" data-title="Multiple Classic Porsche's lined up">
+                    <img src="images/trio.jpg" alt="Multiple Classic Porsche's lined up" />
+                </a>
+                <a href="images/white_porsche.jpg" target="_blank" data-lightbox="cars" data-title="An image of a white Porsche with snow-topped mountains in the background">
+                    <img src="images/white_porsche.jpg" alt="An image of a white Porsche with snow-topped mountains in the background" />
+                </a>
+                <a href="images/yellow_retro_carrera.jpg" target="_blank" data-lightbox="cars" data-title="An image of a yellow Classic Porsche Carrera">
+                    <img src="images/yellow_retro_carrera.jpg" alt="An image of a yellow Classic Porsche Carrera" />
+                </a>
+                <a class="vertical" href="images/curve.jpg" target="_blank" data-lightbox="cars" data-title="Image of a Porsche racing around a curve">
+                    <img src="images/curve.jpg" alt="Image of a Porsche racing around a curve" />
+                </a>
+                <a href="images/white_retro_911.jpg" target="_blank" data-lightbox="cars" data-title="An image of a white Classic Porsche 911">
+                    <img src="images/white_retro_911.jpg" alt="An image of a white Classic Porsche 911" />
+                </a>
 
             </div>
         
@@ -331,6 +358,8 @@
             &copy; Joshua Luther - Web Design 22<br/>
             &copy; Daniel Chatman - Web Design 22</p>
     </footer>
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
