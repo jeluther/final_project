@@ -162,6 +162,13 @@ h1, h2, h3{
 
 }
 
+.models h2{
+
+    color: goldenrod;
+    text-align: center;
+
+}
+
 .models h3{
 
     text-align: center;
