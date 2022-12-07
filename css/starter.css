@@ -22,7 +22,7 @@ body{
   padding: 0;
   font-size: 16pt;
   background-color: black;
-
+  font-family: 'Courier New', Courier, Arial, 'Times New Roman', Times, serif;
 }
 
 header{
@@ -67,6 +67,7 @@ p {
 
 a.skip{
   background: white;
+  color: black;
   left: 0;
   padding: 6px;
   position: absolute;
