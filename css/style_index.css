@@ -22,6 +22,12 @@ nav #index{
 
 }
 
+#main > h1{
+
+    color: white;
+
+}
+
 h3{
 
     text-align: center;
