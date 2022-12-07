@@ -200,6 +200,15 @@ h1, h2, h3{
 
 }
 
+#reset{
+
+    width: auto;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
 .movies h1{
 
     display: block;
