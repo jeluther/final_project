@@ -182,6 +182,7 @@ p{
     
         grid-column: 1/3;
         text-align: center;
+        color: goldenrod;
     
     }
     
@@ -310,6 +311,7 @@ p{
         display: block;
         grid-column: 1/5;
         text-align: center;
+        color: darkblue;
 
     }
 
@@ -374,8 +376,4 @@ p{
 
 }
 
-}
-
-#history_Auto {
-    color: black;
 }

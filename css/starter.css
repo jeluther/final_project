@@ -23,11 +23,13 @@ body{
   font-size: 16pt;
   background-color: black;
   font-family: 'Courier New', Courier, Arial, 'Times New Roman', Times, serif;
+
 }
 
 header{
+
   background-color: black;
-  /* color: white; */
+  color: white;
   border-bottom: 3px solid goldenrod;
   margin-bottom: 20px;
 
@@ -35,37 +37,49 @@ header{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 h1{
+
   font-size: 2.5em;
   text-align: center;
   line-height: 2;
+
 }
 
 h2{
+
   font-size: 2em;
   text-align: center;
   padding: 5px;
+
 }
 
 h3{
+
   font-size: 1.75em;
   text-align: center;
   padding: 5px;
+
 }
 
 h4{
+
   font-size: 1.5em;
   text-align: center;
   padding: 5px;
+
 }
 
 p {
+
   padding: 0 30px;
+
 } 
 
 a.skip{
+
   background: white;
   color: black;
   left: 0;
@@ -75,21 +89,28 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
+
 }
 
 a.skip:focus{
+
   background: white;
   top:20px;
   color: black;
   text-decoration-style: solid;
+
 }
 
 *:focus{
+
   border: 2px solid black;
+
 }
 
 .nav_item a{
+
   padding: 10px;
+
 }
 
 a:link, a:visited{
@@ -99,18 +120,22 @@ a:link, a:visited{
 }
 
 .nav_item a:hover, a:focus{
+
   color: goldenrod;
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
+
 }
 
 footer{
+
   background-color: black;
   border-top: 3px solid goldenrod;
   color: white;
   padding: 30px;
   text-align: center;
+
 }
 
 
@@ -131,7 +156,6 @@ footer{
 }
 
 #logo{
-
  
   animation-name: logo;
   animation-duration: 5s;
